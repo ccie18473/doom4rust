@@ -55,6 +55,8 @@ cargo build --release
 
 cargo run --release
 
+```
+
 ## Author
 
 * [Antonio Soares](https://github.com/ccie18473)
