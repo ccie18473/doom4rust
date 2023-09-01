@@ -65,4 +65,4 @@ cargo run --release
 
 This project is licensed under the [MIT] License - see the LICENSE.md file for details
 
-The Wolfenstein textures are copyrighted by id Software.
+The DOOM textures are copyrighted by id Software.
