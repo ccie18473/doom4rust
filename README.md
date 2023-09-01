@@ -1,6 +1,9 @@
-# Doom4Rust v1.0.0
+# Doom4Rust v0.1.0
 
 ## Description
+
+At this stage, only the initial splash screen is working but the complete project structure is created.
+This is Unsafe Rust, it seems to much complicated and time consuming to convert to Safe Rust.
 
 ![](doom4rust.jpg)
 

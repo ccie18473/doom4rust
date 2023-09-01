@@ -178,110 +178,154 @@ mline_t thintriangle_guy[] = {
 // segment in map coordinates (with the upright y-axis n' all) so
 // that it can be used with the brain-dead drawing stuff.
 
-pub fn AM_getIslope(ml: *mut mline_t, is: *mut islope_t) {}
+pub fn AM_getIslope(ml: *mut mline_t, is: *mut islope_t) {
+    println!("AM_getIslope");
+}
 
 //
 //
 //
-pub fn AM_activateNewScale() {}
+pub fn AM_activateNewScale() {
+    println!("AM_activateNewScale");
+}
 
 //
 //
 //
-pub fn AM_saveScaleAndLoc() {}
+pub fn AM_saveScaleAndLoc() {
+    println!("AM_saveScaleAndLoc");
+}
 
 //
 //
 //
-pub fn AM_restoreScaleAndLoc() {}
+pub fn AM_restoreScaleAndLoc() {
+    println!("AM_restoreScaleAndLoc");
+}
 
 //
 // adds a marker at the current location
 //
-pub fn AM_addMark() {}
+pub fn AM_addMark() {
+    println!("AM_addMark");
+}
 
 //
 // Determines bounding box of all vertices,
 // sets global variables controlling zoom range.
 //
-pub fn AM_findMinMaxBoundaries() {}
+pub fn AM_findMinMaxBoundaries() {
+    println!("AM_findMinMaxBoundaries");
+}
 
 //
 //
 //
-pub fn AM_changeWindowLoc() {}
+pub fn AM_changeWindowLoc() {
+    println!("AM_changeWindowLoc");
+}
 
 //
 //
 //
-pub fn AM_initVariables() {}
+pub fn AM_initVariables() {
+    println!("AM_initVariables");
+}
 
 //
 //
 //
-pub fn AM_loadPics() {}
+pub fn AM_loadPics() {
+    println!("AM_loadPics");
+}
 
-pub fn AM_unloadPics() {}
+pub fn AM_unloadPics() {
+    println!("AM_unloadPics");
+}
 
-pub fn AM_clearMarks() {}
+pub fn AM_clearMarks() {
+    println!("AM_clearMarks");
+}
 
 //
 // should be called at the start of every level
 // right now, i figure it out myself
 //
-pub fn AM_LevelInit() {}
+pub fn AM_LevelInit() {
+    println!("AM_LevelInit");
+}
 
 //
 //
 //
-pub fn AM_Stop() {}
+pub fn AM_Stop() {
+    println!("AM_Stop");
+}
 
 //
 //
 //
-pub fn AM_Start() {}
+pub fn AM_Start() {
+    println!("AM_Start");
+}
 
 //
 // set the window scale to the maximum size
 //
-pub fn AM_minOutWindowScale() {}
+pub fn AM_minOutWindowScale() {
+    println!("AM_minOutWindowScale");
+}
 
 //
 // set the window scale to the minimum size
 //
-pub fn AM_maxOutWindowScale() {}
+pub fn AM_maxOutWindowScale() {
+    println!("AM_maxOutWindowScale");
+}
 
 //
 // Handle events (user inputs) in automap mode
 //
 pub fn AM_Responder(ev: *mut event_t) -> bool {
+    println!("AM_Responder");
+
     return false;
 }
 
 //
 // Zooming
 //
-pub fn AM_changeWindowScale() {}
+pub fn AM_changeWindowScale() {
+    println!("AM_changeWindowScale");
+}
 
 //
 //
 //
-pub fn AM_doFollowPlayer() {}
+pub fn AM_doFollowPlayer() {
+    println!("AM_doFollowPlayer");
+}
 
 //
 //
 //
-pub fn AM_updateLightLev() {}
+pub fn AM_updateLightLev() {
+    println!("AM_updateLightLev");
+}
 
 //
 // Updates on Game Tick
 //
-pub fn AM_Ticker() {}
+pub fn AM_Ticker() {
+    println!("AM_Ticker");
+}
 
 //
 // Clear automap frame buffer.
 //
-pub fn AM_clearFB(color: i32) {}
+pub fn AM_clearFB(color: i32) {
+    println!("AM_clearFB");
+}
 
 //
 // Automap clipping of lines.
@@ -291,35 +335,47 @@ pub fn AM_clearFB(color: i32) {}
 // use a hash algorithm to handle  the common cases.
 //
 pub fn AM_clipMline(ml: *mut mline_t, fl: *mut fline_t) -> bool {
+    println!("AM_clipMline");
+
     return true;
 }
 
 //
 // Classic Bresenham w/ whatever optimizations needed for speed
 //
-pub fn AM_drawFline(fl: *mut fline_t, color: i32) {}
+pub fn AM_drawFline(fl: *mut fline_t, color: i32) {
+    println!("AM_drawFline");
+}
 
 //
 // Clip lines, draw visible part sof lines.
 //
-pub fn AM_drawMline(ml: *mut mline_t, color: i32) {}
+pub fn AM_drawMline(ml: *mut mline_t, color: i32) {
+    println!("AM_drawMline");
+}
 
 //
 // Draws flat (floor/ceiling tile) aligned grid lines.
 //
-pub fn AM_drawGrid(color: i32) {}
+pub fn AM_drawGrid(color: i32) {
+    println!("AM_drawGrid");
+}
 
 //
 // Determines visible lines, draws them.
 // This is LineDef based, not LineSeg based.
 //
-pub fn AM_drawWalls() {}
+pub fn AM_drawWalls() {
+    println!("AM_drawWalls");
+}
 
 //
 // Rotation in 2D.
 // Used to rotate player arrow line character.
 //
-pub fn AM_rotate(x: *mut i32, y: *mut i32, a: angle_t) {}
+pub fn AM_rotate(x: *mut i32, y: *mut i32, a: angle_t) {
+    println!("AM_rotate");
+}
 
 pub fn AM_drawLineCharacter(
     lineguy: *mut mline_t,
@@ -330,14 +386,25 @@ pub fn AM_drawLineCharacter(
     x: i32,
     y: i32,
 ) {
+    println!("AM_drawLineCharacter");
 }
 
-pub fn AM_drawPlayers() {}
+pub fn AM_drawPlayers() {
+    println!("AM_drawPlayers");
+}
 
-pub fn AM_drawThings(colors: i32, colorrange: i32) {}
+pub fn AM_drawThings(colors: i32, colorrange: i32) {
+    println!("AM_drawThings");
+}
 
-pub fn AM_drawMarks() {}
+pub fn AM_drawMarks() {
+    println!("AM_drawMarks");
+}
 
-pub fn AM_drawCrosshair(color: i32) {}
+pub fn AM_drawCrosshair(color: i32) {
+    println!("AM_drawCrosshair");
+}
 
-pub fn AM_Drawer() {}
+pub fn AM_Drawer() {
+    println!("AM_Drawer");
+}
